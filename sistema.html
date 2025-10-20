@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +9,13 @@
   <link rel="stylesheet" href="sistema.css">
 </head>
 
+
 <body>
   <header>
     <h1>Sistema Cozinha</h1>
-    <button type="submit" value="sair">Sair</button>
+    <div>
+      <button type="submit" value="sair">Sair</button>
+    </div>
   </header>
   <main>
     <div>
@@ -29,31 +33,30 @@
             <td>Manhã</td>
             <td>22/09/2025</td>
             <td>Almoço</td>
-            <td>✏️</td>
-            <td>🗑️</td>
+            <th>✏️</th>
+            <th>🗑️</th>
           </tr>
           <tr>
             <td>Tarde</td>
             <td>22/09/2025</td>
             <td>Almoço</td>
-            <td>✏️</td>
-            <td>🗑️</td>
+            <th>✏️</th>
+            <th>🗑️</th>
           </tr>
           <tr>
             <td>Noite</td>
             <td>22/09/2025</td>
             <td>Jantar</td>
-            <td>✏️</td>
-            <td>🗑️</td>
+            <th>✏️</th>
+            <th>🗑️</th>
           </tr>
           <tr>
             <td>Integral</td>
             <td>22/09/2025</td>
             <td>Lanche</td>
-            <td>✏️</td>
-            <td>🗑️</td>
-
-
+            <th>✏️</th>
+            <th>🗑️</th>
+          </tr>
         </table>
 
 
@@ -66,14 +69,14 @@
           <div>
             <select name="" id="">
               <option value="">Escolha uma opção</option>
-            <option value="reclamacao">Reclamação</option>
-            <option value="sugestao">Sugestão</option>
-            <option value="elogio">Elogio</option>
-            <option value="outro">Outro</option>
-          </select><br> <!--  Vamos copiar do codigo original -->
-          <textarea name="opiniao" id="opiniao" placeholder="Digite sua opinião aqui..."
-          disabled="disabled"></textarea><br>
-        </div>
+              <option value="reclamacao">Reclamação</option>
+              <option value="sugestao">Sugestão</option>
+              <option value="elogio">Elogio</option>
+              <option value="outro">Outro</option>
+            </select><br> <!--  Vamos copiar do codigo original -->
+            <textarea name="opiniao" id="opiniao" placeholder="Digite sua opinião aqui..."
+              disabled="disabled"></textarea><br>
+          </div>
           <button type="submit" value="enviar">Enviar</button>
         </div>
       </section>
@@ -81,17 +84,36 @@
     <aside>
       <h3>Cadastrar Prato</h3>
       <form action="">
-        <input type="date" name="data" id="data"><br>
+        <fieldset>
+          <legend>Data</legend>
+        <input class="ocultar" type="date" name="data" id="data"><br>
+        </fieldset>
+        <fieldset>
+        <legend>Turno</legend>
         <select name="turno" id="turno">
           <option value="manha">Manhã</option>
           <option value="tarde">Tarde</option>
           <option value="noite">Noite</option>
           <option value="integral">Integral</option>
         </select><br>
+      </fieldset>
+        <h3>Refeição</h3>
+        <fieldset>
+          <legend>Titulo</legend>
         <input type="text" placeholder="titulo"><br>
+        </fieldset>
+        <fieldset>
+          <legend>Itens</legend>
         <textarea name="itens" id="itens" placeholder="Itens"></textarea><br>
+        </fieldset>
+        <fieldset>
+          <legend>Bebida</legend>
         <input type="text" name="bebida" id="bebida" placeholder="Bebida"><br>
-        <button type="submit">inserir img</button><br>
+        </fieldset>
+        <fieldset>
+          <legend>Inserir img</legend>
+        <button type="submit"></button><br>
+        </fieldset>
         <button type="submit" value="cadastrar">Cadastrar</button>
     </aside>
   </main>
@@ -100,4 +122,6 @@
   </footer>
 </body>
 
+
 </html>
+

@@ -3,21 +3,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+
+
+
 body {
     background-color: blue;
 }
+
+
+
 
 main {
     display: flex;
 }
 
+
+
+
 footer {
-    background-color: blue;
-    color: white;
-    padding: 20px 300px;
-    font-size: 32px;
-    font-family: "Inika";
+    background-color: white;
 }
+
+
+
 
 header {
     display: flex;
@@ -27,6 +35,9 @@ header {
     padding: 20px 10px;
 }
 
+
+
+
 header h1 {
     margin: 0 auto;
     text-align: center;
@@ -35,6 +46,9 @@ header h1 {
     font-family: "Inika";
     font-style: "Inika";
 }
+
+
+
 
 header button {
     width: 217px;
@@ -48,24 +62,28 @@ header button {
     font-family: "Inknut Antiqua";
 }
 
+
+
+
 .conosco {
     display: flex;
     flex-direction: column;
 }
 
 .conosco button {
-    width: 168px;
-    height: 78px;
+    width: 100px;
+    height: 55px;
     border: 1px;
     border-radius: 100px;
     color: rgb(255, 255, 255);
-    background-color: rgb(38, 0, 255);
-    border: 1px solid black;
-    font-size: 32px;
-    font-family: "Inter";
-    font-style: "Regular";
-
+    background-color: #2550ff;
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 25px;
+    font-family: 'inika';
 }
+
+
+
 
 .tabela {
     display: flex;
@@ -74,13 +92,13 @@ header button {
     justify-content: center;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
-    padding: 20px 300px;
-    font-size: 30px;
-    font-family: "Inika";
+    font-size: 25px;
+    font-family: 'inika';
 }
 
 table {
     border-collapse: collapse;
+    width: 100%;
     height: 400px;
 }
 
@@ -88,7 +106,7 @@ table,
 th,
 td {
     border: 2px solid black;
-    width: 700px;
+    width: 1250px;
 }
 
 th,
@@ -97,23 +115,65 @@ td {
     text-align: center;
 }
 
+aside {
+    margin-left: 100px;
+    margin-top: 20px;
+    padding: 20px;
+    font-family: 'inika', sans-serif;
+    font-size: 26px;
+    color: white;
+    border: 2px solid white;
+
+
+
+
+}
+
+aside input,
+aside select,
+aside textarea,
+aside button {
+    background-color: rgb(76, 139, 255);
+    color: white;
+    width: 252px;
+    height: 51px;
+    font-size: 36px;
+    font-family: 'inika';
+    font-weight: 400;
+    font-style: normal;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+
+
+footer {
+    background-color: blue;
+    color: white;
+    padding: 20px 300px;
+    font-size: 32px;
+    font-family: 'inika';
+}
+
 .h3 {
     background-color: #2550ff;
     width: 100%;
-    font-size: 36px;
-    font-style: "Regular";
-    font-family: "Inika";
-    color: rgb(255, 255, 255);
+    color: white;
+    font-size: 28px;
+    font-family: 'inika';
 }
 
 .opcao {
+    background-color: white;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(255, 255, 255);
-    width: 100%;
     height: 207px;
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid black;
+    width: 100%;
 }
 
 select {
@@ -128,30 +188,169 @@ textarea {
     margin: 15px;
 }
 
-aside {
-    margin-left: 100px;
-    margin-top: 20px;
-    padding: 20px;
-    font-family: "Inika", sans-serif;
-    font-size: 26px;
-    color: rgb(255, 255, 255);
-    border: 2px solid white;
+aside fieldset {
+    border: 0;
 }
 
-aside input,
-aside select,
-aside textarea,
-aside button {
-    background-color: #048EFF;
-    color: white;
-    width: 252px;
-    height: 51px;
-    font-size: 36px;
-    font-family: "Inika";
-    font-weight: 400;
-    font-style: normal;
-    line-height: 100%;
-    letter-spacing: 0%;
+@media (max-width: 768px) {
+    body {
+        background-color: white;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+
+    header {
+        width: 100%;
+        height: 150px;
+        background-color: #303aff;
+    }
+
+
+    header h1 {
+        font-size: 32px;
+    }
+
+
+    header button {
+        width: 50px;
+        height: 28px;
+        border-radius: 20px;
+        color: black;
+        background-color: #43B2AC;
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    header div {
+        display: flex;
+        align-self: flex-start;
+    }
+
+
+    main {
+        display: flex;
+        flex-direction: column-reverse;
+
+
+    }
+
+
+    aside {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+
+    h3 {
+        color: #303AFF;
+        font-size: 36px;
+        font-family: 'inters';
+        width: 100%;
+        height: 69px;
+        background-color: #448AFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    aside,
+    form {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    aside h3 {
+        color: black;
+        font-size: 36px;
+        font-family: 'inters';
+        width: 100%;
+        height: 69px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    form h3 {
+        font-family: "Inter";
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 15px;
+        background-color: white;
+        color: black;
+        justify-content: start;
+        margin-left: 15px;
+    }
+
+
+    aside fieldset {
+        padding: 0;
+        width: 252px;
+        height: 42px;
+    }
+
+
+    aside legend {
+        display: block;
+        color: black;
+    }
+
+
+    input::placeholder,
+    textarea::placeholder {
+        color: transparent;
+    }
+
+
+    .ocultar,
+    select#turno,
+    textarea#itens,
+    input#bebida {
+        border: 0;
+        color: black;
+        background-color: transparent;
+    }
+
+    
+td{
+    border: 1px solid #020101;
+    padding: 0%;
+    font-size: medium;
     text-align: center;
-    vertical-align: middle;
+}
+
+
+th{
+    border: 1px solid #020101;
+    padding: 0%;
+    font-size: medium;
+    text-align: center;
+}
+
+    input {
+        height: 100%;
+        outline: none;
+    }
+
+
+    form,
+    input#date,
+    select#turno {
+        font-size: 25px;
+    }
+
 }
