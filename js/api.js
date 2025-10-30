@@ -25,7 +25,7 @@ async function loginCozinheira(email, senha) {
         if (data.usuario) {
             localStorage.setItem("usuarioid:"),data.usuario.id;
             localStorage.setItem("usuarioNome:",data.usuario.nome);
-            localStorage.setItem("token",data.token12);
+            localStorage.setItem("token",data.token);
 
             return { sucesso: true, user: data.usuario };
         } else {
