@@ -1,2 +1,2 @@
-import { mostraMsg } from "./util";
-import {recuperarSenha } from "./util";
+import { mostraMsg } from "./util.js";
+import {recuperarSenha } from "./util.js";

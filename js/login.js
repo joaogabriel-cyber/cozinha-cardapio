@@ -1,2 +1,2 @@
-import { mostraMsg } from "./util";
-import {loginCozinheira} from "./util";
+import { mostraMsg } from "./util.js";
+import {loginCozinheira} from "./util.js";
