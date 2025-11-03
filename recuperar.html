@@ -9,18 +9,19 @@
 </head>
 
 <body>
+    <h2> Recuperar Senha</h2>
     <main>
-        <form>
-            <h2>Recuperar Senha</h2>
+        <form id="formRecuperar" action="#" method="post">
             <fieldset>
                 <legend>E-mail:</legend>
-                <input type="email" name="email"  id=""><br>
+                <input type="email" name="email" id="email" required><br>
             </fieldset>
             <p>O código será enviado para o e-mail</p>
-            <button type="submit" value="enviar">Enviar</button><br><br>
+            <button type="submit" id="enviar" value="enviar">Enviar</button><br><br>
             <a href="index.html">Voltar</a><br>
         </form>
     </main>
+    <script type="module" src="./js/recuperar.js"></script>
 
 </body>
 
