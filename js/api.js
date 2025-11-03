@@ -117,6 +117,6 @@ export async function exibirTabelaCardapio(cardapio) {
         const res = await fetch(API_USUARIOS);
     } catch (error) {
         console.error('Erro ao exibir a tabela do cardapio', error);
-        alert('ocorreu um erro ao exibirir tabela cardápio');
+        alert('Ocorreu um erro ao exibirir tabela cardápio');
     }
 }
