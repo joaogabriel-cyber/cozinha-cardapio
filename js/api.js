@@ -75,7 +75,7 @@ export async function listarCardapio() {
         return cardapios;
     } catch (error) {
         console.error('Erro ao listar cardapio', error);
-        alert('ocorreu um erro ao listar cardápio');
+        alert('Ocorreu um erro ao listar cardápio');
     }
 }
 export async function cadastrarCardapio(cardapio) {
@@ -84,7 +84,7 @@ export async function cadastrarCardapio(cardapio) {
 
     } catch (error) {
         console.error('Erro ao cadastrar cardapio', error);
-        alert('ocorreu um erro ao cadastrar cardápio');
+        alert('Ocorreu um erro ao cadastrar cardápio');
     }
 }
 export async function alterarCardapio(id, atualizarCardapio) {
@@ -101,7 +101,7 @@ export async function excluirCardapio(id) {
         const res = await fetch(API_USUARIOS);
     } catch (error) {
         console.error('Erro ao excluir cardapio', error);
-        alert('ocorreu um erro ao excluir cardápio');
+        alert('Ocorreu um erro ao excluir cardápio');
     }
 }
 export async function buscarCardapio(id) {
